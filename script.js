@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   navItems.forEach((item, i) => {
     const linkPath = navLinks[i].getAttribute("href");
 
-    if (linkPath === currentPath || (currentPage === "" && linkPath === "index.html")) {
+    if (linkPath === currentPath || (currentPath === "" && linkPath === "index.html")) {
       item.classList.add("header__nav-list-item--active");
     }
   });
