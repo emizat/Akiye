@@ -319,9 +319,9 @@
     flex-direction: column;
     gap: 3rem;
 
-    @media only screen and (max-width: 37.5em) {
-      width: 70%;
-    }
+    // @media only screen and (max-width: 37.5em) {
+    //   width: 70%;
+    // }
   }
 
   &__logo {
