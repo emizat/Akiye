@@ -30,12 +30,13 @@ const faqContentBox = document.querySelectorAll(
 
 // Navigation active state
 document.addEventListener("DOMContentLoaded", () => {
-  const currentPath = window.location.pathname.slice(1);
+  // const currentPath = window.location.pathname.slice(1);
+  const currentPath = window.location.pathname.split("/").pop();
 
   navItems.forEach((item, i) => {
     const linkPath = navLinks[i].getAttribute("href");
 
-    if (linkPath === currentPath) {
+    if (linkPath === currentPath || (linkPath === "index.html" && currentPath === "")) {
       item.classList.add("header__nav-list-item--active");
     }
   });
